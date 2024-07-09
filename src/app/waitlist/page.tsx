@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Download from "../components/landing/download/Download";
+import Footer from "../components/Footer/Footer";
 
 const Contact = () => {
 	return (
-		<div className="page">
+		<div className="waitlist">
 			<Header />
-			<div className="background"></div>
-			<h1 className="mt-[150px] text-black text-[100px]">WAITLIST</h1>
-			<p>Coming Soon</p>
+			<h1 className="mt-[150px] text-black text-[30px]">WAITLIST FORM COMES HERE</h1>
+			<Download />
+			<Footer />
 		</div>
 	);
 };
