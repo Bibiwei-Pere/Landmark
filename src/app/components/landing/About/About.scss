@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 35px;
+	padding: 65px 33px;
+	max-width: 1130px;
+	margin: auto;
+	@include md {
+		grid-template-columns: 1fr;
+		padding: 60px 25px;
+		img {
+			display: none;
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		span {
+			font-size: 13px;
+			color: $light_gray;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			@include md {
+				gap: 30px;
+			}
+
+			a {
+				border: 1px solid $light_gray;
+				width: 150px;
+				padding: 10px;
+				color: $gray;
+				text-align: center;
+				border-radius: 5px;
+				&:hover {
+					border: 1px solid $green;
+					color: $green;
+				}
+			}
+		}
+	}
+
+	img {
+		max-width: 550px;
+		width: 100%;
+		height: auto;
+	}
+}
