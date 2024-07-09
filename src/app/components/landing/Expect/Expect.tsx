@@ -2,6 +2,7 @@ import React from "react";
 import "./Expect.scss";
 import Image from "next/image";
 import chess1 from "../../assets/images/chess2.svg";
+import chess2 from "../../assets/images/chess1.svg";
 import { CheckCircle, ThumbsUpIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -45,7 +46,7 @@ const Expect = () => {
 			</div>
 			<div className="container">
 				<div className="wrapper2">
-					<Image src={chess1} alt="Phone" className="phone" />
+					<Image src={chess2} alt="Phone" className="phone" />
 				</div>
 				<div className="wrapper1">
 					<b className="mb-4 w-9 bg-red-50 text-red-700 p-1.5 rounded-[50%]">
